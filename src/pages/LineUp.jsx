@@ -18,42 +18,9 @@ const LineUp = () => {
 
  
  
-    
-    // const [spotifyApi, setSpotifyApi] = useState(null)
-    // const [accessToken, setAccessToken] =useState("")
-
     const [searchKey, setSearchKey] = useState("")
 
-//     useEffect(() =>{
-//     const _getToken = async () => {
-//         try {
-//         const result = await fetch(
-//             "https://accounts.spotify.com/api/token",{
-//             method:"POST",
-//             headers: {
-//                 "Content-Type": "application/x-www-form-urlencoded",
-//                 "Authorization": "Basic " + btoa(client_ID + ":" + Client_Secret)
-//             },
-//             body:"grant_type=client_credentials"
-//     });
-//     const data = await result.json();
-//     setAccessToken(data.access_token) ;
-//     const spotifyApiInstance = new SpotifyWebApi();
-//     setSpotifyApi(spotifyApiInstance)
 
-//     } catch (error){
-//         console.log("error fetching token")
-//     }};
-    
-//     _getToken();
-// },[]);
-
-// const searchArtists = (e) =>{
-//     const {data} = await axios.get("https://api.spotify.com/v1/search",
-
-// )
-// }
- 
 
 
 
@@ -83,10 +50,7 @@ return(
                         <div className="flex mt-20 ">
 
                             <div className="m-5"><PeppersCard/>
-                            {/* <form onSubmit={searchArtists}>
-                                <input type="text" onChange={e => setSearchKey(e.target.value)}/>
-                                <button type="submit">Search RHCP songs</button>
-                            </form> */}
+                         
                             </div>
 
                             <div className="m-5"><GunsCard/>
